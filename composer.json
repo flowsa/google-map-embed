@@ -2,7 +2,7 @@
     "name": "flowsa/google-map-embed",
     "description": "A simple Google Map embed",
     "type": "craft-plugin",
-    "version": "0.0.1",
+    "version": "1.2.0",
     "keywords": [
         "craft",
         "cms",
@@ -11,8 +11,8 @@
         "googlemapembed"
     ],
     "support": {
-        "docs": "???",
-        "issues": "???"
+        "docs": "https://github.com/flowsa/google-map-embed",
+        "issues": "https://github.com/flowsa/google-map-embed/issues"
     },
     "license": "MIT",
     "authors": [
@@ -22,7 +22,7 @@
         }
     ],
     "require": {
-        "craftcms/cms": "^3.0.0-RC1"
+        "craftcms/cms": "^4.0.0-alpha"
     },
     "autoload": {
         "psr-4": {
@@ -36,5 +36,16 @@
         "hasCpSection": false,
         "changelogUrl": "???",
         "class": "flowsa\\googlemapembed\\GoogleMapEmbed"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "craftcms/rector": "dev-main"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
     }
 }

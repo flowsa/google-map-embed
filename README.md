@@ -1,4 +1,4 @@
-# GoogleMapEmbed plugin for Craft CMS 3.x
+# GoogleMapEmbed plugin for Craft CMS 4.x
 
 A simple Google Map embed
 
@@ -6,7 +6,7 @@ A simple Google Map embed
 
 ## Requirements
 
-This plugin requires Craft CMS 3.0.0-beta.23 or later.
+This plugin requires Craft CMS 4.0.0-alpha or later.
 
 ## Installation
 
@@ -16,11 +16,19 @@ To install the plugin, follow these instructions.
 
         cd /path/to/project
 
-2. Then tell Composer to load the plugin:
+2. Open composer.json, under repositories, add:
 
-        composer require /google-map-embed
+        "google-map-embed":
+        {
+            "type": "vcs",
+            "url": "https://github.com/flowsa/google-map-embed.git"
+        }
 
-3. In the Control Panel, go to Settings → Plugins and click the “Install” button for GoogleMapEmbed.
+3. Then tell Composer to load the plugin:
+
+        composer require flowsa/google-map-embed dev-craft4
+
+4. In the Control Panel, go to Settings → Plugins and click the “Install” button for GoogleMapEmbed.
 
 ## GoogleMapEmbed Overview
 

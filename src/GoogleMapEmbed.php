@@ -62,7 +62,7 @@ class GoogleMapEmbed extends Plugin
      *
      * @var string
      */
-    public $schemaVersion = '0.0.1';
+    public string $schemaVersion = '0.0.1';
 
     // Public Methods
     // =========================================================================
@@ -150,7 +150,7 @@ class GoogleMapEmbed extends Plugin
      *
      * @return \craft\base\Model|null
      */
-    protected function createSettingsModel()
+    protected function createSettingsModel(): ?\craft\base\Model
     {
         return new Settings();
     }
